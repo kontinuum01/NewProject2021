@@ -18,14 +18,12 @@ public class KitApp4 {
         String wordsHuman;
         char[] hiddenfield = new char[15];
         Arrays.fill(hiddenfield, '#');
-
         System.out.print("Выберите из следующего набора слов: ");
         System.out.println(Arrays.toString(words));
         while (true) {
             System.out.print("Введите ваш вариант: ");
             wordsHuman = scanner.next();
-
-            if (wordsHuman.toLowerCase().equals(wordsAI)) {
+        if (wordsHuman.toLowerCase().equals(wordsAI)) {
                 System.out.println("Вы угадали!!!");
                 break;
             }
